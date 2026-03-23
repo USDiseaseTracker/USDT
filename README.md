@@ -1,6 +1,6 @@
 # USDT — US Disease Tracker Public Data
 
-This repository stores publicly available data published and maintained by the **US Disease Tracker (USDT)**. It serves as the canonical, open-access archive for disease surveillance datasets, enabling researchers, public-health officials, and the general public to access, reproduce, and build upon USDT findings.
+This repository stores publicly available data published and maintained by the **US Disease Tracker (USDT)**. It serves as the canonical, open-access archive for disease reporting datasets, enabling researchers, public-health officials, and the general public to access, reproduce, and build upon USDT's efforts.
 
 ## About USDT
 
@@ -8,9 +8,9 @@ The US Disease Tracker is an initiative dedicated to collecting, standardizing, 
 
 ## Repository Contents
 
-Datasets will be added to this repository as they are released. Each dataset will be organized by disease and/or reporting period and will include:
+Datasets will be added to this repository as they are released. Data include:
 
-- Raw and/or processed data files (CSV, TSV, or similar formats)
+- Raw reporting data submitted by jurisdictions, combined into a single file for all geographies
 - A data dictionary describing each variable
 - Source and methodology notes
 
@@ -26,13 +26,6 @@ You can download individual files directly from GitHub, or clone the entire repo
 git clone https://github.com/USDiseaseTracker/USDT.git
 ```
 
-### R Users
-
-This repository is configured for R-based data workflows. After cloning, open any `.R` or `.Rmd` files in RStudio or your preferred R environment to reproduce analyses.
-
-## Contributing
-
-Contributions such as corrections, additional documentation, or new datasets are welcome. Please open an issue or submit a pull request.
 
 ## License
 
