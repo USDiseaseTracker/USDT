@@ -19,9 +19,3 @@ USDT_NNDSS_data.csv,outcome,string,Whether the count represents cases or deaths.
 USDT_NNDSS_data.csv,data_source,string,Origin of the record: national NNDSS data or USDT jurisdiction-collected data.,"NNDSS, USDT",NNDSS,None
 USDT_NNDSS_data.csv,data_status,string,Review/publication status of the record.,approved,approved,None
 USDT_NNDSS_data.csv,current_upload_timestamp,string,"Timestamp (YYYYMMDD-HHMMSS) indicating when this record was most recently uploaded/refreshed into the dataset.",YYYYMMDD-HHMMSS,20260710-185319,None
-jurisdiction_reference_table.csv,jurisdiction_name,string,Full name of the state or jurisdiction.,e.g. Connecticut,Connecticut,None
-jurisdiction_reference_table.csv,jurisdiction_id,string,Two-letter postal abbreviation for the jurisdiction; corresponds to state in USDT_NNDSS_data.csv.,US state/territory postal abbreviation,CT,None
-jurisdiction_reference_table.csv,data_source,string,Data source associated with this jurisdiction's records.,"NNDSS, USDT",USDT,None
-jurisdiction_reference_table.csv,conditions_included,string,Semicolon-separated list of diseases/conditions this jurisdiction reports on within USDT.,Semicolon-delimited disease names,measles; meningococcus; pertussis,None
-jurisdiction_reference_table.csv,subjurisdiction_type,string,Type of sub-state geographic unit used by this jurisdiction, if any (e.g. county, region, planning area).,"county, region, planning area, etc.",planning area,Blank if jurisdiction does not report at sub-state level
-jurisdiction_reference_table.csv,website_dashboard_link,string,URL to the jurisdiction's public dashboard for this data, if available.,URL,https://dph.illinois.gov/...,Blank if no public dashboard exists
