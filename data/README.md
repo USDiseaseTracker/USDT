@@ -1,4 +1,4 @@
-# Data Folder
+# Data
 
 This folder contains USDT's disease surveillance datasets and supporting reference data.
 
