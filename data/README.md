@@ -6,12 +6,12 @@ This folder contains USDT's disease surveillance datasets and supporting referen
 
 - `USDT_disease_data.csv` — Combined disease case/death counts by jurisdiction, time period, and age group, drawn from NNDSS (national) and USDT (jurisdiction-collected) sources.
 - `reference/jurisdiction_reference_table.csv` — Reference table of jurisdictions reporting to USDT, their data source, the conditions they cover, and sub-jurisdiction geography type.
-- `USDT_data_dictionary.csv` — Column-level documentation for both files above (data type, allowed values, examples, missing-value notes, and how each field compares to the official USDT submission spec).
+- `data_dictionary.csv` — Column-level documentation for both files above (data type, allowed values, examples, missing-value notes, and how each field compares to the official USDT submission spec).
 - `disease_reference.csv` — Per-disease valid options (outcome, confirmation status, valid age groups, valid subtypes, CSTE reference) for all 10 diseases tracked by USDT.
 
 ## Data Dictionary
 
-See `USDT_data_dictionary.csv` for full details. Summary of key fields in `USDT_disease_data.csv`:
+See `data_dictionary.csv` for full details. Summary of key fields in `USDT_disease_data.csv`:
 
 | Column | Description |
 |---|---|
@@ -50,4 +50,4 @@ Field definitions and valid values are governed by USDT's public data standards 
 - `reporting_jurisdiction` and `geo_name` may refer to sub-state geographies (e.g. public health districts, regions, counties) depending on how each jurisdiction reports; `state` always gives the parent state/territory.
 - Negative `count` values are valid and represent downward revisions to previously reported totals. The raw submission spec requires positive, non-zero counts; negatives appear only in this published/corrected dataset.
 - NNDSS records are state/territory level only; USDT records include both state-level and sub-state-level data.
-- This combined dataset deviates from the raw USDT jurisdiction submission spec in a few ways — see the `notes_on_deviation_from_spec` column in `USDT_data_dictionary.csv` for details. Notably: `time_unit` includes `month`/`year` (spec is weekly-only), `geo_unit` uses two broad categories instead of the spec's granular list, `pediatric flu mortality` still reports `outcome = deaths` (spec now uses `cases`), `measles` appears under both `confirmed` and `confirmed and probable` (spec requires `confirmed` only), and `disease_subtype` includes a combined `ACWY` value not in the raw spec's serogroup list.
+- This combined dataset deviates from the raw USDT jurisdiction submission spec in a few ways — see the `notes_on_deviation_from_spec` column in `data_dictionary.csv` for details. Notably: `time_unit` includes `month`/`year` (spec is weekly-only), `geo_unit` uses two broad categories instead of the spec's granular list, `pediatric flu mortality` still reports `outcome = deaths` (spec now uses `cases`), `measles` appears under both `confirmed` and `confirmed and probable` (spec requires `confirmed` only), and `disease_subtype` includes a combined `ACWY` value not in the raw spec's serogroup list.
