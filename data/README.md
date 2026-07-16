@@ -35,8 +35,6 @@ See `USDT_data_dictionary.csv` for full details. Summary of key fields in `USDT_
 | data_status | Review/publication status |
 | current_upload_timestamp | Timestamp of most recent upload/refresh |
 
-Key fields in `reference/jurisdiction_reference_table.csv`: `jurisdiction_name`, `jurisdiction_id`, `data_source`, `conditions_included`, `subjurisdiction_type`, `website_dashboard_link`.
-
 ## Diseases Tracked
 
 USDT currently tracks 10 diseases: measles, pertussis, invasive meningococcal disease, hepatitis A, acute hepatitis B, perinatal hepatitis B, mumps, mpox, varicella, and influenza-associated pediatric mortality (`pediatric flu mortality`). See `disease_reference.csv` for each disease's valid age groups, subtypes, confirmation status, and outcome per the official standard.
