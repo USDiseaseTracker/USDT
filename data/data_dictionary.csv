@@ -1,0 +1,27 @@
+file,column,data_type,description,allowed_values / format,example,missing_values
+USDT_NNDSS_data.csv,mmwr_year,integer,MMWR (epidemiological) year of the report period.,"2025, 2026",2025,None
+USDT_NNDSS_data.csv,mmwr_month,string,MMWR month of the report period. Populated only when time_unit = month.,"Jan, Feb, March, April, May, June, July, August, Sept, Oct, Nov, Dec",March,Blank when time_unit is week or year
+USDT_NNDSS_data.csv,mmwr_week,numeric,MMWR week number (1-53) of the report period. Populated only when time_unit = week.,1-53,13,Blank when time_unit is month or year
+USDT_NNDSS_data.csv,report_period_start,date (YYYY-MM-DD),Start date of the reporting period covered by this record.,ISO 8601 date,2025-03-02,None
+USDT_NNDSS_data.csv,report_period_end,date (YYYY-MM-DD),End date of the reporting period covered by this record.,ISO 8601 date,2025-03-29,None
+USDT_NNDSS_data.csv,date_type,string,"Indicates how the report period was assigned: ""cccd"" (case count creation date, standard MMWR calendar) or ""jurisdiction date hierarchy"" (jurisdiction-specific reporting date logic).","cccd, jurisdiction date hierarchy",cccd,None
+USDT_NNDSS_data.csv,time_unit,string,Temporal resolution of the record.,"month, week, year",month,None
+USDT_NNDSS_data.csv,disease_name,string,Name of the disease/condition being reported.,"acute hepatitis b, hepatitis a, measles, meningococcus, mpox, mumps, pediatric flu mortality, perinatal hepatitis b, pertussis, varicella",measles,None
+USDT_NNDSS_data.csv,disease_subtype,string,Subtype or serogroup of the disease, where applicable (e.g. meningococcus serogroup); ""total"" when no subtype breakdown applies.,"ACWY, B, nongroupable, total, unknown, unspecified",total,None
+USDT_NNDSS_data.csv,reporting_jurisdiction,string,Name/code of the specific reporting entity, which may be a state/territory abbreviation or a named sub-state unit (e.g. a public health district).,"State/territory postal abbreviation (e.g. AK, CA) or sub-state entity name (e.g. Public Health District 1)",AK,None
+USDT_NNDSS_data.csv,state,string,Two-letter postal abbreviation of the state or territory the record belongs to (parent geography of reporting_jurisdiction).,US state/territory postal abbreviations (e.g. AK, CA, DC),AK,None
+USDT_NNDSS_data.csv,geo_unit,string,Geographic resolution of the record.,"state_and_territories, sub_state",state_and_territories,None
+USDT_NNDSS_data.csv,geo_name,string,Standardized geography identifier/name for the record; matches state for state-level records or a sub-state code (e.g. ID_1) for sub-state records.,State abbreviation or sub-state code,AK,None
+USDT_NNDSS_data.csv,age_group,string,Age group the count applies to.,"<1 y, 1-4 y, 5-11 y, 12-18 y, 19-22 y, 23-44 y, 45-64 y, >=65 y, total, unknown, unspecified",total,None
+USDT_NNDSS_data.csv,count,integer,Number of cases or deaths reported for the given disease/jurisdiction/period/age group. Can be negative, reflecting downward revisions/corrections to previously reported counts.,Integer (may be negative),1,None
+USDT_NNDSS_data.csv,confirmation_status,string,Case classification included in the count.,"confirmed, confirmed and probable",confirmed and probable,None
+USDT_NNDSS_data.csv,outcome,string,Whether the count represents cases or deaths.,"cases, deaths",cases,None
+USDT_NNDSS_data.csv,data_source,string,Origin of the record: national NNDSS data or USDT jurisdiction-collected data.,"NNDSS, USDT",NNDSS,None
+USDT_NNDSS_data.csv,data_status,string,Review/publication status of the record.,approved,approved,None
+USDT_NNDSS_data.csv,current_upload_timestamp,string,"Timestamp (YYYYMMDD-HHMMSS) indicating when this record was most recently uploaded/refreshed into the dataset.",YYYYMMDD-HHMMSS,20260710-185319,None
+jurisdiction_reference_table.csv,jurisdiction_name,string,Full name of the state or jurisdiction.,e.g. Connecticut,Connecticut,None
+jurisdiction_reference_table.csv,jurisdiction_id,string,Two-letter postal abbreviation for the jurisdiction; corresponds to state in USDT_NNDSS_data.csv.,US state/territory postal abbreviation,CT,None
+jurisdiction_reference_table.csv,data_source,string,Data source associated with this jurisdiction's records.,"NNDSS, USDT",USDT,None
+jurisdiction_reference_table.csv,conditions_included,string,Semicolon-separated list of diseases/conditions this jurisdiction reports on within USDT.,Semicolon-delimited disease names,measles; meningococcus; pertussis,None
+jurisdiction_reference_table.csv,subjurisdiction_type,string,Type of sub-state geographic unit used by this jurisdiction, if any (e.g. county, region, planning area).,"county, region, planning area, etc.",planning area,Blank if jurisdiction does not report at sub-state level
+jurisdiction_reference_table.csv,website_dashboard_link,string,URL to the jurisdiction's public dashboard for this data, if available.,URL,https://dph.illinois.gov/...,Blank if no public dashboard exists
