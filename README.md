@@ -35,8 +35,6 @@ Datasets will be added to this repository as they are released. Data include:
 For more info, see [`data/jurisdiction_reference_table.csv`](data/jurisdiction_reference_table.csv).
 <!-- CURRENT_DATA_TABLE_END -->
 
-*This section is auto-generated from [`data/jurisdiction_reference_table.csv`](data/jurisdiction_reference_table.csv) by [`scripts/update_readme_current_data.py`](scripts/update_readme_current_data.py), and is refreshed automatically by GitHub Actions whenever that file changes on `main`.*
-
 ## Data Usage
 
 All data in this repository is released under the [MIT License](LICENSE) and is free for public use. When using USDT data in publications or derivative works, please cite this repository and the relevant dataset documentation.
