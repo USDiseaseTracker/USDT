@@ -59,15 +59,14 @@ def load_usdt_jurisdictions(csv_path: Path):
 
 
 def build_table(rows) -> str:
-    header = "| State | Jurisdiction ID | Conditions Submitted to USDT | Jurisdiction Website |"
-    sep = "|---|---|---|---|"
+    header = "| State | Conditions Submitted to USDT | Jurisdiction Website |"
+    sep = "|---|---|---|"
     lines = [header, sep]
     for row in rows:
         name = row.get("jurisdiction_name", "").strip()
-        jid = row.get("jurisdiction_id", "").strip()
         conditions = format_conditions(row.get("conditions_included", ""))
         website = format_website(row.get("website_dashboard_link", ""))
-        lines.append(f"| {name} | {jid} | {conditions} | {website} |")
+        lines.append(f"| {name} | {conditions} | {website} |")
     return "\n".join(lines)
 
 
