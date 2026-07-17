@@ -1,0 +1,41 @@
+name: Update README Current Data table
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/jurisdiction_reference_table.csv"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Regenerate Current Data section
+        run: python scripts/update_readme_current_data.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "usdt-bot"
+          git config user.email "usdt-bot@users.noreply.github.com"
+          if git diff --quiet -- README.md; then
+            echo "No changes to README.md; nothing to commit."
+          else
+            git add README.md
+            git commit -m "chore: update Current Data table from jurisdiction_reference_table.csv"
+            git push origin main
+          fi

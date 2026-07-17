@@ -1,0 +1,16 @@
+disease_name,disease_name_long,outcome_per_spec,confirmation_status,valid_age_groups,valid_disease_subtypes,cste_reference,cste_reference_link
+measles,measles,cases,confirmed,<1 y; 1-4 y; 5-11 y; 12-18 y; 19-22 y; 23-44 y; 45-64 y; >=65 y; total; unknown; unspecified,total,12-ID-07,https://www.cste.org/resource/resmgr/ps1/12-ID-07FINAL.pdf
+pertussis,pertussis,cases,confirmed and probable,<1 y; 1-4 y; 5-11 y; 12-18 y; 19-22 y; 23-44 y; 45-64 y; >=65 y; total; unknown; unspecified,total,19-ID-08,https://www.cste.org/resource/resmgr/2019ps/final/19-ID-08_Pertussis_final_7.3.pdf
+meningococcus,invasive meningococcal disease,cases,confirmed and probable,<1 y; 1-4 y; 5-11 y; 12-18 y; 19-22 y; 23-44 y; 45-64 y; >=65 y; total; unknown; unspecified,A; B; C; W; X; Y; Z; total; unknown; unspecified; nongroupable,14-ID-06,https://www.cste.org/resource/resmgr/2014PS/14_ID_06upd.pdf
+hepatitis a,hepatitis A,cases,confirmed,<1 y; 1-4 y; 5-11 y; 12-18 y; 19-22 y; 23-44 y; 45-64 y; >=65 y; total; unknown; unspecified,total,18-ID-07,https://www.cste.org/resource/resmgr/2018_position_statements/18-ID-07.pdf
+acute hepatitis b,acute hepatitis B,cases,confirmed and probable,<1 y; 1-4 y; 5-11 y; 12-18 y; 19-22 y; 23-44 y; 45-64 y; >=65 y; total; unknown; unspecified,total,23-ID-05,https://www.cste.org/resource/resmgr/ps/ps_2023/23-ID-05_Hepatitis_B.pdf
+perinatal hepatitis b,perinatal hepatitis B,cases,confirmed,<2 y; total,total,16-ID-06,https://www.cste.org/resource/resmgr/2016PS/16_ID_06.pdf
+mumps,mumps,cases,confirmed and probable,<1 y; 1-4 y; 5-11 y; 12-18 y; 19-22 y; 23-44 y; 45-64 y; >=65 y; total; unknown; unspecified,total,23-ID-06,https://www.cste.org/resource/resmgr/ps/ps_2023/23-ID-06_Mumps.pdf
+mpox,mpox,cases,confirmed and probable,<1 y; 1-4 y; 5-11 y; 12-18 y; 19-22 y; 23-44 y; 45-64 y; >=65 y; total; unknown; unspecified,total,22-ID-10,https://www.cste.org/resource/resmgr/ps/ps2022/22-ID-10_Monkeypox_7.28.2022.pdf
+varicella,varicella,cases,confirmed and probable,<1 y; 1-4 y; 5-11 y; 12-18 y; 19-22 y; 23-44 y; 45-64 y; >=65 y; total; unknown; unspecified,total,23-ID-09,https://www.cste.org/resource/resmgr/ps/ps_2023/23-ID-09_Varicella.pdf
+pediatric flu mortality,influenza-associated pediatric mortality,cases (this dataset uses deaths -- see notes_on_deviation_from_spec in data_dictionary.csv),confirmed,<1 y; 1-4 y; 5-11 y; 12-18 y; total; unknown; unspecified,total,09-ID-44,https://www.cste.org/resource/resmgr/PS/09-ID-44.pdf
+
+Notes:
+Source: USDiseaseTracker-Docs repository (https://github.com/USDiseaseTracker/USDiseaseTracker-Docs), examples-and-templates/disease_metadata.csv, spec version 2.0.1 (updated 2026-06-30).
+outcome_per_spec / confirmation_status / valid_age_groups / valid_disease_subtypes reflect the official USDT jurisdiction submission standard. The combined USDT_disease_data.csv dataset may deviate for NNDSS-sourced records and legacy fields -- see notes_on_deviation_from_spec column in data_dictionary.csv.
+Age groups are defined as: <1 y = birth to <1 yr; 1-4 y = 1st to <5th birthday; 5-11 y = 5th to <12th birthday; 12-18 y = 12th to <19th birthday; 19-22 y = 19th to <23rd birthday; 23-44 y = 23rd to <45th birthday; 45-64 y = 45th to <65th birthday; >=65 y = 65 and older; <2 y (perinatal hepatitis b only) = birth to <2 yr.
