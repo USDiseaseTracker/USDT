@@ -32,7 +32,6 @@ See `data_dictionary.csv` for full details. Summary of key fields in `USDT_disea
 | confirmation_status | `confirmed` or `confirmed and probable` |
 | outcome | `cases` |
 | data_source | `USDT` or `NNDSS` (for jurisdictions not yet submitting data to USDT) |
-| data_status | Review/publication status |
 | current_upload_timestamp | Timestamp of most recent upload/refresh |
 
 ## Diseases Tracked
