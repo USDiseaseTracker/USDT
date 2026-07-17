@@ -1,6 +1,6 @@
 # USDT — US Disease Tracker Public Data
 
-This repository stores publicly available data published and maintained by the **US Disease Tracker (USDT)**. It serves as the canonical, open-access archive for disease reporting datasets, enabling researchers, public-health officials, and the general public to access, reproduce, and build upon USDT's efforts.
+This repository stores publicly available data published and maintained by the US Disease Tracker (USDT). It serves as the canonical, open-access archive for disease reporting datasets, enabling researchers, public-health officials, and the general public to access, reproduce, and build upon USDT's efforts.
 
 ## About USDT
 
