@@ -1,21 +1,21 @@
-file,column,data_type,description,allowed_values / format,example,missing_values
-USDT_disease_data.csv,mmwr_year,integer,MMWR (epidemiological) year of the report period.,"2025, 2026",2025,None
-USDT_disease_data.csv,mmwr_month,string,MMWR month of the report period. Populated only when time_unit = month.,"Jan, Feb, March, April, May, June, July, August, Sept, Oct, Nov, Dec",March,Blank when time_unit is week or year
-USDT_disease_data.csv,mmwr_week,numeric,MMWR week number (1-53) of the report period. Populated only when time_unit = week.,1-53,13,Blank when time_unit is month or year
-USDT_disease_data.csv,report_period_start,date (YYYY-MM-DD),Start date of the reporting period covered by this record.,ISO 8601 date,2025-03-02,None
-USDT_disease_data.csv,report_period_end,date (YYYY-MM-DD),End date of the reporting period covered by this record.,ISO 8601 date,2025-03-29,None
-USDT_disease_data.csv,date_type,string,"Indicates how the report period was assigned: ""cccd"" (case count creation date, standard MMWR calendar) or ""jurisdiction date hierarchy"" (jurisdiction-specific reporting date logic).","cccd, jurisdiction date hierarchy",cccd,None
-USDT_disease_data.csv,time_unit,string,Temporal resolution of the record.,"month, week, year",month,None
-USDT_disease_data.csv,disease_name,string,Name of the disease/condition being reported.,"acute hepatitis b, hepatitis a, measles, meningococcus, mpox, mumps, pediatric flu mortality, perinatal hepatitis b, pertussis, varicella",measles,None
-USDT_disease_data.csv,disease_subtype,string,"Subtype or serogroup of the disease, where applicable (e.g. meningococcus serogroup); ""total"" when no subtype breakdown applies.","ACWY, B, nongroupable, total, unknown, unspecified",total,None
-USDT_disease_data.csv,reporting_jurisdiction,string,"Name/code of the specific reporting entity, which may be a state/territory abbreviation or a named sub-state unit (e.g. a public health district).","State/territory postal abbreviation (e.g. AK, CA) or sub-state entity name (e.g. Public Health District 1)",AK,None
-USDT_disease_data.csv,state,string,Two-letter postal abbreviation of the state or territory the record belongs to (parent geography of reporting_jurisdiction).,"US state/territory postal abbreviations (e.g. AK, CA, DC)",AK,None
-USDT_disease_data.csv,geo_unit,string,Geographic resolution of the record.,"state_and_territories, sub_state",state_and_territories,None
-USDT_disease_data.csv,geo_name,string,Standardized geography identifier/name for the record; matches state for state-level records or a sub-state code (e.g. ID_1) for sub-state records.,State abbreviation or sub-state code,AK,None
-USDT_disease_data.csv,age_group,string,Age group the count applies to.,"<1 y, 1-4 y, 5-11 y, 12-18 y, 19-22 y, 23-44 y, 45-64 y, >=65 y, total, unknown, unspecified",total,None
-USDT_disease_data.csv,count,integer,"Number of cases or deaths reported for the given disease/jurisdiction/period/age group. Can be negative, reflecting downward revisions/corrections to previously reported counts.",Integer (may be negative),1,None
-USDT_disease_data.csv,confirmation_status,string,Case classification included in the count.,"confirmed, confirmed and probable",confirmed and probable,None
-USDT_disease_data.csv,outcome,string,Whether the count represents cases or deaths.,"cases, deaths",cases,None
-USDT_disease_data.csv,data_source,string,Origin of the record: national NNDSS data or USDT jurisdiction-collected data.,"NNDSS, USDT",NNDSS,None
-USDT_disease_data.csv,data_status,string,Review/publication status of the record.,approved,approved,None
-USDT_disease_data.csv,current_upload_timestamp,string,Timestamp (YYYYMMDD-HHMMSS) indicating when this record was most recently uploaded/refreshed into the dataset.,YYYYMMDD-HHMMSS,20260710-185319,None
+File,Field Name,Data Type,Values/Format,Validated (format sensitive)*,Description
+USDT_disease_data.csv,mmwr_year,INTEGER,"e.g. 2025, 2026",no,MMWR (epidemiological) year of the report period.
+USDT_disease_data.csv,mmwr_month,TEXT,"""Jan"", ""Feb"", ""March"", ""April"", ""May"", ""June"", ""July"", ""August"", ""Sept"", ""Oct"", ""Nov"", ""Dec""",no,MMWR month of the report period. Populated only when time_unit = month.
+USDT_disease_data.csv,mmwr_week,INTEGER,1-53,no,MMWR week number of the report period. Populated only when time_unit = week.
+USDT_disease_data.csv,report_period_start,DATE,YYYY-MM-DD,yes,Start date of MMWR week period (for aggregate reporting)
+USDT_disease_data.csv,report_period_end,DATE,YYYY-MM-DD,yes,End date of MMWR week period (for aggregate reporting)
+USDT_disease_data.csv,date_type,TEXT,"""cccd"", ""jurisdiction date hierarchy"", ""date of death""",yes,"Calculated Case Counting Date, otherwise specify (Note: if other, please reach out to have your date included in valdiation value set. Strong preference for hierarchical date types)"
+USDT_disease_data.csv,time_unit,TEXT,"""week"", ""month"", ""year""",yes,Time aggregation unit: 'week'
+USDT_disease_data.csv,disease_name,TEXT,"""measles"", ""pertussis"", ""meningococcus"", ""hepatitis a"", ""acute hepatitis b"", ""perinatal hepatitis b"", ""mumps"", ""mpox"", ""varicella"", ""pediatric flu mortality""",yes,"Name of the disease (e.g., measles, pertussis)"
+USDT_disease_data.csv,disease_subtype,TEXT,"""A"", ""B"", ""C"", ""W"", ""X"", ""Y"", ""Z"", ""nongroupable"", ""total"", ""unknown"", ""unspecified"" (dataset also uses ""ACWY"" from NNDSS)",yes,"Subspecies, type, strain, or other distinguishing classification of the disease or pathogen that is important for reporting and tracking. For invasive meningococcal disease, this enables the option to provide serogroup once/if it is available. Use ""total"" for non-subtype-stratified aggregations or diseases without subtype reporting (measles, pertussis, hep a, acute hepatitis B, perinatal hepatitis B, mumps, mpox, varicella, influenza-associated pediatric mortality). Use ""unknown"" when subtyping was not performed. Use ""unspecified"" when subtype is known but suppressed."
+USDT_disease_data.csv,reporting_jurisdiction,TEXT,"""AL"", ""AK"", ""AZ"", ""..."", ""WY"", ""DC"", ""AS"", ""GU"", ""MP"", ""PR"", ""VI"", ""NYC""",no,"Abbreviation for the reporting state, city, or territory"
+USDT_disease_data.csv,state,TEXT,"""AL"", ""AK"", ""AZ"", ""AR"", ""AS"", ""CA"", ""CO"", ""CT"", ""DE"", ""DC"", ""FL"", ""GA"", ""GU"", ""HI"", ""ID"", ""IL"", ""IN"", ""IA"", ""KS"", ""KY"", ""LA"", ""ME"", ""MD"", ""MA"", ""MI"", ""MN"", ""MS"", ""MO"", ""MT"", ""NE"", ""NV"", ""NH"", ""NJ"", ""NM"", ""NY"", ""NC"", ""ND"", ""MP"", ""OH"", ""OK"", ""OR"", ""PA"", ""PR"", ""RI"", ""SC"", ""SD"", ""TN"", ""TX"", ""TT"", ""UT"", ""VT"", ""VA"", ""VI"", ""WA"", ""WV"", ""WI"", ""WY""",yes,Two-letter abbreviation for the state or territory of the jurisdiction
+USDT_disease_data.csv,geo_unit,TEXT,"""state_and_territories"", ""sub_state"" (spec defines: ""county"", ""state"", ""region"", ""planning area"", ""hsa"", NA)",yes,"Type of sub-jurisdiction level geography unit (ie county, planning area)"
+USDT_disease_data.csv,geo_name,TEXT,"{name of geo_unit element}, ""international resident"", ""total"", ""unspecified""",no,"Name of the county or other sub-jurisdiction level geography unit in which the case occurs; ""international resident"" should be reported for cases reported from a jurisdiction but that are an international resident."
+USDT_disease_data.csv,age_group,TEXT,"""<1 y"", ""1-4 y"", ""5-11 y"", ""12-18 y"", ""19-22 y"", ""23-44 y"", ""45-64 y"", "">=65 y"", ""total"", ""unknown"", ""unspecified""",yes,Standardized age group
+USDT_disease_data.csv,count,INTEGER,n,yes,Aggregate count of specified outcome for the specified group for this time period
+USDT_disease_data.csv,confirmation_status,TEXT,"""confirmed"", ""confirmed and probable""",yes,Case confirmation status reported
+USDT_disease_data.csv,outcome,TEXT,"""cases""",yes,Epidemiologic outcome reported
+USDT_disease_data.csv,data_source,TEXT,"""NNDSS"", ""USDT""",no,Origin of the record: national NNDSS data or USDT jurisdiction-collected data.
+USDT_disease_data.csv,data_status,TEXT,"""approved""",no,Review/publication status of the record.
+USDT_disease_data.csv,current_upload_timestamp,TEXT,YYYYMMDD-HHMMSS,no,Timestamp indicating when this record was most recently uploaded/refreshed into the combined dataset.
