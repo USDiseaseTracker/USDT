@@ -49,3 +49,7 @@ Field definitions and valid values are governed by USDT's public data standards 
 - `reporting_jurisdiction` and `geo_name` may refer to sub-state geographies (e.g. public health districts, regions, counties) depending on how each jurisdiction reports; `state` always gives the parent state/territory.
 - Negative `count` values are valid and represent downward revisions to previously reported totals. The raw submission spec requires positive, non-zero counts; negatives appear only in this published/corrected dataset.
 - NNDSS records are state/territory level only; USDT records include both state-level and sub-state-level data.
+
+## Versioned Data
+
+All versions of `USDT_disease_data.csv` are archived though GitHub verioning. To retrieve prior versions of the file, see [accessing_versioned_data.md](https://github.com/USDiseaseTracker/USDT/blob/main/data/accessing_versioned_data.md).
