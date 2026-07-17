@@ -6,7 +6,7 @@ This folder contains USDT's disease surveillance datasets and supporting referen
 
 - `USDT_disease_data.csv` — Combined disease case/death counts by jurisdiction, time period, and age group, drawn from NNDSS (national) and USDT (jurisdiction-collected) sources.
 - `reference/jurisdiction_reference_table.csv` — Reference table of jurisdictions reporting to USDT, their data source, the conditions they cover, and sub-jurisdiction geography type.
-- `data_dictionary.csv` — Column-level documentation for both files above (data type, allowed values, examples, missing-value notes, and how each field compares to the official USDT submission spec).
+- `data_dictionary.csv` — Column-level documentation for both files above (data type, allowed values, examples, and missing-value notes).
 - `disease_reference.csv` — Per-disease valid options (outcome, confirmation status, valid age groups, valid subtypes, CSTE reference) for all diseases tracked by USDT.
 
 ## Data Dictionary
