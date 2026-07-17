@@ -52,4 +52,4 @@ Field definitions and valid values are governed by USDT's public data standards 
 
 ## Versioned Data
 
-All versions of `USDT_disease_data.csv` are archived though GitHub verioning. To retrieve prior versions of the file, see [accessing_versioned_data.md](https://github.com/USDiseaseTracker/USDT/blob/main/data/accessing_versioned_data.md).
+All versions of `USDT_disease_data.csv` are archived though GitHub verioning. To retrieve prior versions of the file, see [accessing_versioned_data.md](https://github.com/USDiseaseTracker/USDT/blob/main/data/accessing_versioned_data.md) for instructions.
