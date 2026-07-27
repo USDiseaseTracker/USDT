@@ -17,13 +17,15 @@ Datasets will be added to this repository as they are released. Data include:
 ## Current Data
 
 <!-- CURRENT_DATA_TABLE_START -->
-8 jurisdictions currently submit data directly to USDT:
+10 jurisdictions currently submit data directly to USDT:
 
 | State | Conditions Submitted to USDT | Jurisdiction Website |
 |---|---|---|
+| Colorado | Hepatitis A, Measles, Meningococcus, Mpox, Mumps, Pediatric Flu Mortality, Pertussis, Varicella | — |
 | Connecticut | Measles, Meningococcus, Pertussis | — |
-| Idaho | Measles, Meningococcus, Pertussis | — |
+| Idaho | Acute Hepatitis B, Hepatitis A, Measles, Meningococcus, Mpox, Mumps, Pertussis | — |
 | Illinois | Measles, Meningococcus, Pertussis | [Link](https://dph.illinois.gov/topics-services/diseases-and-conditions/infectious-diseases/infectious-diseases-dashboard.html) |
+| Indiana | Acute Hepatitis B, Hepatitis A, Measles, Meningococcus, Mpox, Mumps, Pediatric Flu Mortality, Pertussis, Varicella | — |
 | Massachusetts | Measles, Meningococcus, Pertussis | [Link](https://www.mass.gov/dph-data-library) |
 | Michigan | Measles, Meningococcus, Pertussis | — |
 | Minnesota | Measles, Meningococcus, Pertussis | — |
