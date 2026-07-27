@@ -1,7 +1,9 @@
 jurisdiction_name,jurisdiction_id,data_source,conditions_included,subjurisdiction_type,website_dashboard_link
+Colorado,CO,USDT,hepatitis a; measles; meningococcus; mpox; mumps; pediatric flu mortality; pertussis; varicella,county,
 Connecticut,CT,USDT,measles; meningococcus; pertussis,planning area,
-Idaho,ID,USDT,measles; meningococcus; pertussis,region,
+Idaho,ID,USDT,acute hepatitis b; hepatitis a; measles; meningococcus; mpox; mumps; pertussis,region,
 Illinois,IL,USDT,measles; meningococcus; pertussis,region,https://dph.illinois.gov/topics-services/diseases-and-conditions/infectious-diseases/infectious-diseases-dashboard.html
+Indiana,IN,USDT,acute hepatitis b; hepatitis a; measles; meningococcus; mpox; mumps; pediatric flu mortality; pertussis; varicella,county,
 Massachusetts,MA,USDT,measles; meningococcus; pertussis,county,https://www.mass.gov/dph-data-library
 Michigan,MI,USDT,measles; meningococcus; pertussis,region,
 Minnesota,MN,USDT,measles; meningococcus; pertussis,county,
@@ -12,7 +14,6 @@ Alabama,AL,NNDSS,acute hepatitis b; hepatitis a; measles; meningococcus; mpox; m
 Arkansas,AR,NNDSS,acute hepatitis b; hepatitis a; measles; meningococcus; pediatric flu mortality; pertussis; varicella,state or territory only,
 Arizona,AZ,NNDSS,acute hepatitis b; hepatitis a; measles; meningococcus; mpox; mumps; pediatric flu mortality; pertussis; varicella,state or territory only,
 California,CA,NNDSS,acute hepatitis b; hepatitis a; measles; meningococcus; mpox; mumps; pediatric flu mortality; perinatal hepatitis b; pertussis; varicella,state or territory only,
-Colorado,CO,NNDSS,acute hepatitis b; hepatitis a; measles; meningococcus; mpox; mumps; pediatric flu mortality; perinatal hepatitis b; pertussis; varicella,state or territory only,
 District of Columbia,DC,NNDSS,acute hepatitis b; hepatitis a; meningococcus; mpox; pediatric flu mortality; pertussis; varicella,state or territory only,
 Delaware,DE,NNDSS,acute hepatitis b; hepatitis a; meningococcus; mpox; pertussis; varicella,state or territory only,
 Florida,FL,NNDSS,acute hepatitis b; hepatitis a; measles; meningococcus; mpox; mumps; pediatric flu mortality; pertussis; varicella,state or territory only,
@@ -20,7 +21,6 @@ Georgia,GA,NNDSS,acute hepatitis b; hepatitis a; measles; meningococcus; mpox; m
 Guam,GU,NNDSS,pertussis; varicella,state or territory only,
 Hawaii,HI,NNDSS,hepatitis a; measles; meningococcus; mpox; mumps; pediatric flu mortality; pertussis; varicella,state or territory only,
 Iowa,IA,NNDSS,acute hepatitis b; hepatitis a; measles; mumps; pediatric flu mortality; pertussis,state or territory only,
-Indiana,IN,NNDSS,acute hepatitis b; hepatitis a; measles; meningococcus; mpox; mumps; pediatric flu mortality; pertussis; varicella,state or territory only,
 Kansas,KS,NNDSS,acute hepatitis b; hepatitis a; measles; meningococcus; mpox; mumps; pediatric flu mortality; pertussis,state or territory only,
 Kentucky,KY,NNDSS,acute hepatitis b; hepatitis a; measles; meningococcus; mpox; mumps; pediatric flu mortality; pertussis; varicella,state or territory only,
 Louisiana,LA,NNDSS,hepatitis a; measles; meningococcus; mpox; mumps; pediatric flu mortality; pertussis; varicella,state or territory only,
