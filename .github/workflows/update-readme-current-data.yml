@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - "data/jurisdiction_reference_table.csv"
-  workflow_dispatch: {}
+  workflow_dispatch:
 
 permissions:
   contents: write
