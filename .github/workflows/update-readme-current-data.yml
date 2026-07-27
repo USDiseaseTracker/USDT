@@ -3,7 +3,7 @@ name: Update README Current Data table
 on:
   push:
     branches:
-      - main
+      - 'main'
     paths:
       - "data/jurisdiction_reference_table.csv"
   workflow_dispatch:
