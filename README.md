@@ -37,6 +37,10 @@ Datasets will be added to this repository as they are released. Data include:
 For more info, see [`data/jurisdiction_reference_table.csv`](data/jurisdiction_reference_table.csv).
 <!-- CURRENT_DATA_TABLE_END -->
 
+## Data Standards and Documentation
+
+Data submitted to USDT follow a strictly defined structure and set of standards to ensure the highest level of data quality and value. These standards have been developed in collaboration across USDT organizations and health agencies in the US. These standards are detailed at the [`USDT Docs`](https://usdiseasetracker.github.io/USDiseaseTracker-Docs/) website.
+
 ## Data Usage
 
 All data in this repository is released under the [MIT License](LICENSE) and is free for public use. When using USDT data in publications or derivative works, please cite this repository and the relevant dataset documentation.
