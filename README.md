@@ -1,10 +1,10 @@
 # USDT — US Disease Tracker Public Data
 
-This repository stores publicly available data published and maintained by the US Disease Tracker (USDT). It serves as the canonical, open-access archive for disease reporting datasets, enabling researchers, public-health officials, and the general public to access, reproduce, and build upon USDT's efforts.
+This repository stores publicly available data published and maintained by the [US Disease Tracker (USDT)](https://usdiseasetracker.org/). It serves as the canonical, open-access archive for disease reporting datasets, enabling researchers, public-health officials, and the general public to access, reproduce, and build upon USDT's efforts.
 
 ## About USDT
 
-The US Disease Tracker is an initiative dedicated to collecting, standardizing, and disseminating disease incidence and surveillance data across the United States. By making underlying datasets publicly available, USDT promotes transparency, reproducibility, and collaborative research in public health.
+The US Disease Tracker is an initiative dedicated to collecting, standardizing, and disseminating disease incidence and surveillance data across the United States. By making underlying datasets publicly available, USDT promotes transparency, reproducibility, and collaborative research in public health. For more information please see [USDT Webpage FAQs](https://usdiseasetracker.org/faq).
 
 ## Repository Contents
 
@@ -34,12 +34,12 @@ Datasets will be added to this repository as they are released. Data include:
 
 **Note:** For jurisdictions not yet submitting directly to USDT (and for conditions not listed above), USDT supplements coverage using state/territory-level data from the CDC's National Notifiable Diseases Surveillance System (NNDSS). Source: [https://www.cdc.gov/nndss/](https://www.cdc.gov/nndss/)
 
-For more info, see [`data/jurisdiction_reference_table.csv`](data/jurisdiction_reference_table.csv).
+For more information on state data submissions, see [`data/jurisdiction_reference_table.csv`](data/jurisdiction_reference_table.csv).
 <!-- CURRENT_DATA_TABLE_END -->
 
 ## Data Standards and Documentation
 
-Data submitted to USDT follow a strictly defined structure and set of standards to ensure the highest level of data quality and value. These standards have been developed in collaboration across USDT organizations and health agencies in the US. These standards are detailed at the [`USDT Data Standards`](http://usdiseasetracker.github.io/DataStandards/) website.
+Data submitted to USDT follow a strictly defined structure and set of standards to ensure the highest level of data quality and value. These standards have been developed in collaboration across USDT partner organizations and public health practitioners in the US. These standards are detailed at the [`USDT Data Standards`](http://usdiseasetracker.github.io/DataStandards/) website.
 
 ## Data Usage
 
