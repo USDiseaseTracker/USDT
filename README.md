@@ -39,7 +39,7 @@ For more info, see [`data/jurisdiction_reference_table.csv`](data/jurisdiction_r
 
 ## Data Standards and Documentation
 
-Data submitted to USDT follow a strictly defined structure and set of standards to ensure the highest level of data quality and value. These standards have been developed in collaboration across USDT organizations and health agencies in the US. These standards are detailed at the [`USDT Docs`](https://usdiseasetracker.github.io/USDiseaseTracker-Docs/) website.
+Data submitted to USDT follow a strictly defined structure and set of standards to ensure the highest level of data quality and value. These standards have been developed in collaboration across USDT organizations and health agencies in the US. These standards are detailed at the [`USDT Data Standards`](http://usdiseasetracker.github.io/DataStandards/) website.
 
 ## Data Usage
 
