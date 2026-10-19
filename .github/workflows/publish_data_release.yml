@@ -1,4 +1,4 @@
-name: create merged USDT data files
+name: publish USDT data release
 
 on:
   push:
@@ -41,41 +41,41 @@ jobs:
           files: data/USDT_disease_data.csv
           fail_on_unmatched_files: true
       
-      - name: Send success email
-        if: success()
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 587
-          username: ${{ secrets.GMAIL_ADDRESS }}
-          password: ${{ secrets.GMAIL_APP_PASSWORD }}
-          subject: "✅ USDT Disease Data Release Complete"
-          to: mschnau1@jh.edu
-          from: ${{ secrets.GMAIL_ADDRESS }}
-          body: |
-            USDT Disease Data Release SUCCEEDED.
-            
-            Workflow: ${{ github.workflow }}
-            Run: ${{ github.run_number }}
-            
-            View run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
-      
-      - name: Send failure email
-        if: failure()
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 587
-          username: ${{ secrets.GMAIL_ADDRESS }}
-          password: ${{ secrets.GMAIL_APP_PASSWORD }}
-          subject: "❌ USDT Disease Data Release FAILED"
-          to: mschnau1@jh.edu
-          from: ${{ secrets.GMAIL_ADDRESS }}
-          body: |
-            USDT Disease Data Release FAILED!
-            
-            Workflow: ${{ github.workflow }}
-            Run: ${{ github.run_number }}
-            
-            Check the logs: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+#      - name: Send success email
+#        if: success()
+#        uses: dawidd6/action-send-mail@v3
+#        with:
+#          server_address: smtp.gmail.com
+#          server_port: 587
+#          username: ${{ secrets.GMAIL_ADDRESS }}
+#          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+#          subject: "✅ USDT Disease Data Release Complete"
+#          to: mschnau1@jh.edu
+#          from: ${{ secrets.GMAIL_ADDRESS }}
+#          body: |
+#            USDT Disease Data Release SUCCEEDED.
+#            
+#            Workflow: ${{ github.workflow }}
+#            Run: ${{ github.run_number }}
+#            
+#            View run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+#      
+#      - name: Send failure email
+#        if: failure()
+#        uses: dawidd6/action-send-mail@v3
+#        with:
+#          server_address: smtp.gmail.com
+#          server_port: 587
+#          username: ${{ secrets.GMAIL_ADDRESS }}
+#          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+#          subject: "❌ USDT Disease Data Release FAILED"
+#          to: mschnau1@jh.edu
+#          from: ${{ secrets.GMAIL_ADDRESS }}
+#          body: |
+#            USDT Disease Data Release FAILED!
+#            
+#            Workflow: ${{ github.workflow }}
+#            Run: ${{ github.run_number }}
+#            
+#            Check the logs: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
             
